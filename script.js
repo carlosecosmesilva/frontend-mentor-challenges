@@ -3,15 +3,16 @@ const projects = [
     'order-summary-card',
     'profile-card-component',
     'single-price-grid-component',
+    '3-column-preview-card'
 ];
 
 const list = document.getElementById('list');
 
-projects.forEach((project, i) => {
+projects.forEach((project) => {
     const listItem = document.createElement('li');
     const link = document.createElement('a');
     link.href = `/${project}/index.html`
-    link.innerText = `${i +1}.${formatProjectName(project)}`;
+    link.innerText = `${formatProjectName(project)}`;
 
     const img = document.createElement('img');
     img.src = `/${project}/design/desktop-design.jpg`;
