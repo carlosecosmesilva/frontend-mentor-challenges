@@ -1,0 +1,142 @@
+/* ============== Css Style ============== */
+
+/* ============== Font Import ============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* ============== Variables ==============  */
+:root{
+
+    /* Primary Colors */
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+
+    /* Neutral Colors */
+    --font-very-dark: hsl(234, 12%, 34%);
+    --color-light-gray: hsl(0, 0%, 98%);
+}
+
+/* ============== Reset CSS ==============  */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============== Body CSS ==============  */
+body {
+	background-color: hsl(0, 0%, 98%);
+	font-family: 'Poppins', sans-serif;
+}
+
+/* ============== Main CSS ==============  */
+header {
+	margin: 50px auto;
+	max-width: 500px;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 200;
+	margin: 0;
+}
+
+h1 span {
+	font-weight: 600;
+}
+
+p {
+	color: var(--font-very-dark);
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+.box {
+	background-color: #fff;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+	margin: 15px;
+	width: 350px;
+}
+
+.box::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 100%;
+}
+
+.box-sup::after {
+	background-color: var(--color-red);
+}
+
+.box-team::after {
+	background-color: var(--color-cyan);
+}
+
+.box-karma::after {
+	background-color: var(--color-orange);
+}
+
+.box-calc::after {
+	background-color: var(--color-blue);
+}
+
+.box-push {
+	transform: translateY(50%);
+}
+
+.box h2 {
+	margin: 0;
+}
+
+.box p {
+	font-size: 14px;
+	margin: 15px 0 40px;
+}
+
+.box img {
+	display: block;
+	margin-left: auto;
+}
+
+/* ============== Footer CSS ==============  */
+.attribution {
+    
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: var(--font-very-dark);
+    margin-top: 1.63rem;
+}
+  
+.attribution a {
+    text-decoration: none;
+    color: var(--font-very-dark);
+    font-weight: bold;
+}
+  
+.attribution a:hover {
+    color: var(--font-very-dark);
+}
+
+/* ============== Media Queries ==============  */
+@media (max-width: 775px) {
+	.box-push {
+		transform: translateY(0);
+	}
+}

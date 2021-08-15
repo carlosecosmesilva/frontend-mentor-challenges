@@ -1,0 +1,171 @@
+/* ================= IMPORT FONT CSS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* ================= VARIABLES CSS ================= */
+:root{
+    /* primary colors */
+    --color-cyan:hsl(179, 62%, 43%);
+    --color-bright-yellow:hsl(71, 73%, 54%);
+    --color-cyan-2:hsl(179, 47%, 52%);
+
+    /* neutral colors */
+    --color-light-gray:hsl(204, 43%, 93%);
+    --color-grayish-blue:hsl(218, 22%, 67%);
+    --color-bg-blue:hsl(206, 47%, 93%);
+}
+
+/* ================= RESET CSS ================= */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+}
+
+/* ================= PADRONIZE CSS ================= */
+main {
+    flex-direction: column;
+    z-index: 1;
+    display: flex;
+    margin: 1em;
+    padding: 30px;
+    align-items: center;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-bg-blue);
+}
+
+/* ================= SECTION CSS ================= */
+
+.box{
+    box-shadow: 7px 7px 13px 0px var(--color-grayish-blue);
+    width: 300px;
+    height: 300px;
+    padding: 1.5rem;
+}
+
+.box-primary {
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: #ffffff;
+}
+
+.box-primary h2{
+    padding-bottom: 1.5rem;
+    color:var(--color-cyan);
+}
+.box-primary span{
+    padding-top:10px;
+    color:var(--color-bright-yellow);
+}
+
+p{
+    padding-top:10px;
+    color:var(--color-grayish-blue);
+    line-height:1.5rem;
+}
+
+.box-secondary {
+    background: var(--color-cyan);
+    padding: 1.5rem;
+    color:#ffffff;
+    height: 220px;
+}
+
+h3{
+    font-size: 2rem;
+    padding-bottom: 1px;
+    padding-top: 0.5rem;
+}
+
+em{
+    color:var(--color-light-gray);
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-left: 0.625rem;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+}
+
+.box-secondary p{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    color: var(--color-light-gray);
+}
+
+button{
+    border: none;
+    background-color: var(--color-bright-yellow);
+    width: 100%;
+    height: 50px;
+    border-radius: 0.5rem;
+    color: var(--color-light-gray);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: 7px 7px 13px 0px hsl(0, 0%, 33%);
+}
+
+.box-third{
+    background-color:var(--color-cyan-2);
+    height: 250px;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.box-third h2{
+    color: #ffffff;
+    padding-bottom: 1rem;
+}
+
+.box-third ul li{
+    padding-bottom: 0.3rem;
+    color: var(--color-light-gray);
+}
+
+/* ================= FOOTER CSS ================= */
+
+/* ================= MEDIA QUERIES CSS ================= */
+@media only screen and (min-width: 795px){
+    main{
+        align-items:center;
+    }
+
+    .box-primary{
+        width: 800px;
+        height: 240px;
+    }
+
+    .row {
+        display: flex;
+    }
+    
+    .box-secondary{
+        height: 270px;
+        border-radius:0 0 0 0.5rem;
+        width: 320px;
+    }
+
+    button{
+        margin-top: 1rem;
+    }
+
+    .box-third{
+        height: 270px;
+        width: 482.3px;
+        border-radius: 0 0 0.5rem 0;
+        padding-left: 3rem;
+    }
+
+}

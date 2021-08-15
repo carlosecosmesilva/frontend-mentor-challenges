@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main.cards {
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: initial;
+    background: white;
+    padding: 3rem 2.5rem;
+    max-height: 468px;
+    color: #fff;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+    align-items: flex-start;
+}
+
+main.cards section.card h1 {
+    font-size: 3rem;
+    margin: 0.4rem 0 0.95rem 0;
+    font-family: 'Big Shoulders Display' , sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+main.cards section.card span {
+    font-weight: 100;
+    line-height: 1.4rem;
+    width: 13rem;
+    height: 6rem;
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button {
+    padding: 0.7rem;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+    margin: 1.65rem 0 0.2rem 0;
+    width: 7.2rem;
+    text-align: center;
+}
+
+main.cards section.card.sedan button {
+    color: rgb(255,164,41);
+}
+main.cards section.card.suv button {
+    color: rgb(1,105,114);
+}
+main.cards section.card.luxury button {
+    color: rgb(0,64,63);
+}
+
+main.cards section.card button:active{
+    color: #fff;
+    border: white 2px solid;
+    background: none;
+}
+
+main.cards section.card.sedan {
+    border-radius: 10px 0 0px 10px;
+    box-shadow: 20px 20px 50px -30px rgb(255 164 41);
+    background: linear-gradient(180deg, rgba(255,164,41,1) 0%, rgba(255,153,15,1) 65%, rgba(226,133,37,1) 100%);
+}
+main.cards section.card.suv {
+    box-shadow: 20px 20px 50px -30px rgb(1 105 114);
+    background: linear-gradient(180deg, rgba(1,119,124,1) 0%, rgba(1,105,114,1) 65%, rgba(1,105,114,1) 100%);
+}
+main.cards section.card.luxury {
+    box-shadow: 20px 20px 50px -30px rgb(0 67 66);
+    background: linear-gradient(180deg, rgba(0,67,66,1) 0%, rgba(0,64,63,1) 65%, rgba(0,64,63,1) 100%);
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 2rem 2rem;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+        border-radius: 0 0 5px 5px;
+    }
+
+    main.cards section.card:first-child {
+        margin-top: 35rem;
+        border-radius: 5px 5px 0 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}

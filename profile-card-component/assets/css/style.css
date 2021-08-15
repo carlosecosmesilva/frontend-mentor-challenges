@@ -1,0 +1,181 @@
+/* ================ Font Import ================ */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* ================ Variables CSS ================ */
+:root {
+
+    --bg-dark-cyan: hsl(185, 75%, 39%);
+    --bg-very-dark-blue: hsl(229, 23%, 23%);
+    --bg-dark-gray: hsl(0, 0%, 59%);
+    --bg-white:hsl(360, 100%, 100%);
+
+    --font-grayish: hsl(229, 23%, 23%);
+    --font-black: hsl(0, 2%, 12%);
+}
+
+/* ================ Reset CSS ================ */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* ================ Container ================ */
+.container{
+    height: 100vh;
+   background: var(--bg-dark-cyan);
+    color: var(--bg-very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-top{
+    position: absolute;
+    background: url(/profile-card-component/assets/images/bg-pattern-top.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 61.13rem;
+    width: 61.13rem;
+    top: -33rem;
+    left: -17.75rem;
+}
+
+.bg-bot{
+    position: absolute;
+    background: url(/profile-card-component/assets/images/bg-pattern-bottom.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 61.13rem;
+    width: 61.13rem;
+    bottom: -39.25rem;
+    right: -15.63rem;
+}
+
+/* ================ Card ================ */
+.card{
+    background-color: var(--bg-white);
+    height: 23.5rem;
+    width: 21.9rem;
+    border-radius: 1.25rem;
+    z-index: 99;
+    position: relative;
+}
+
+.card .img-bg{
+    height: 142px;
+    background: url(/profile-card-component/assets/images/bg-pattern-card.svg);
+    border-radius: 1.25rem 1.25rem 0 0;
+    z-index: 99;
+}
+
+/* ================ Profile ================ */
+.profile .pic{
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    border-radius: 50%;
+    padding: 0.313rem;
+    background: var(--bg-white);
+    top: 5.875rem;
+}
+
+.profile .pic img{
+    border-radius: 50%;
+}
+
+.info-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile{
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.063rem solid var(--bg-dark-gray);
+}
+
+.profile .name{
+    font-size: 1.50rem;
+    margin-bottom: 1.3rem;
+    margin-top: 4rem;
+    color: var(--font-grayish);
+}
+
+.profile .name span{
+    font-weight: 700;
+    color: var(--font-grayish);
+}
+
+.profile .location{
+    color: var(--font-grayish);
+    margin-bottom: 1.9rem;
+    margin-top: -0.5rem;
+}
+
+/* ================ Social Stats ================ */
+.social-stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 0.90rem;
+    text-align: center;
+}
+
+.social-stats .number{
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.44rem;
+}
+
+.social-stats p{
+    color: var(--font-grayish);
+    letter-spacing: 0.063rem;
+    font-size: 0.875rem;
+}
+
+/* ================ Footer ================ */
+.attribution {
+    position: relative;
+    bottom: 0;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: var(--font-black);
+    margin-top: -1.63rem;
+}
+  
+.attribution a {
+    text-decoration: none;
+    color: var(--font-trans-white);
+    font-weight: bold;
+}
+  
+.attribution a:hover {
+    color: var(--font-link-blue);
+}
+  
+/* ================ Media Queries ================ */  
+@media (max-width: 375px) {
+    
+    .bg-top{
+        height: 23.45rem;
+        width: 23.45rem;
+        top: -10.45rem;
+        left: -10.45rem;
+    }
+    .bg-bot{
+        height: 23.45rem;
+        width: 23.45rem;
+        bottom: -4.94rem;
+        right: -10.45rem;
+    }
+}
