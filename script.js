@@ -3,7 +3,8 @@ const projects = [
     'order-summary-card',
     'profile-card-component',
     'single-price-grid-component',
-    '3-column-preview-card'
+    '3-column-preview-card',
+    'stats-preview-card-component'
 ];
 
 const list = document.getElementById('list');

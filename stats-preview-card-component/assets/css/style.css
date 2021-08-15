@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/* ================ Variables CSS ================ */
+
+:root {
+  font-size: 0.95rem;
+  --dark-blue: hsl(233, 47%, 7%);
+  --sat-blue: hsl(244, 38%, 16%);
+  --violet: hsl(277, 64%, 61%);
+
+  --font-white: hsl(0, 0%, 100%);
+  --font-trans-white: hsla(0, 0%, 100%, 0.75);
+  --font-more-trans-white: hsla(0, 0%, 100%, 0.6);
+
+  --bg-violet: hsl(277deg, 100%, 50%, 0.42);
+  --bg-light-violet: hsl(293deg, 42%, 35%, 0.24);
+}
+
+/* ================ Reset Style CSS ================ */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--dark-blue);
+  color: var(--font-white);
+  font-weight: 400;
+}
+
+/* ================ Card Stats ================ */
+
+main {
+  min-width: 37.5rem;
+  z-index: 1;
+  display: flex;
+  margin: 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 5.85em 7em 5.85em 5.85em;
+  width: 35.65rem;
+  min-width: 18.75rem;
+  background: var(--sat-blue);
+  border-radius: 0.63rem 0 0 0.63rem;
+}
+
+section h1 {
+  color: var(--font-white);
+  font-size: 2.25rem;
+  margin-bottom: 0.75em;
+  font-weight: 700;
+}
+
+section h1 span {
+  color: var(--violet);
+}
+
+section .content {
+  margin-right: 2em;
+}
+
+section .lead {
+  color: var(--font-trans-white);
+  line-height: 1.5em;
+  margin-bottom: 5em;
+}
+
+section ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
+section ul h2 {
+  color: var(--font-white);
+  margin-bottom: 0.3em;
+}
+
+section ul p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--font-more-trans-white);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.bg-img {
+  min-height: 10em;
+  width: 33.75rem;
+  min-width: 12.5rem;
+  background: url(/stats-preview-card-component/assets/images/image-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0.63rem 0.63rem 0;
+  overflow: hidden;
+}
+
+.overlay {
+  background: var(--bg-violet);
+  height: 100%;
+}
+
+.overlay-2 {
+  background: var(--bg-light-violet);
+  height: 100%;
+  mix-blend-mode: color-burn;
+}
+
+/* ================ Footer ================ */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: var(--font-more-trans-white);
+  margin-bottom: 0.63rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--font-trans-white);
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  color: var(--violet);
+}
+
+/* ================ Media Queries ================ */
+
+@media only screen and (max-width: 1024px) {
+    :root {
+      font-size: 0.75rem;
+    }
+    section {
+      padding: 3em 4.5em 3em 3em;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    body {
+      flex-direction: column;
+    }
+    main {
+      flex-direction: column-reverse;
+      margin: 0.63rem;
+      min-width: 12.5rem;
+      margin-top: 5em;
+    }
+    section {
+      padding: 3.5em;
+      width: 18.75rem;
+      border-radius: 0 0 0.63rem 0.63rem;
+    }
+    section h1,
+    section .lead {
+      text-align: center;
+    }
+    section .lead {
+      font-size: 1.1rem;
+      margin-bottom: 2em;
+      line-height: 1.75em;
+    }
+    section .content {
+      margin-right: 0;
+    }
+    section ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    section ul li {
+      margin-bottom: 2em;
+    }
+    section ul h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 0.25em;
+    }
+    section ul p {
+      font-size: 1.05rem;
+    }
+    .bg-img {
+      height: 13.75rem;
+      width: 18.75rem;
+      border-radius: 0.63rem 0.63rem 0 0;
+      background: url(/stats-preview-card-component/assets/images/image-mobile.jpg) no-repeat;
+      background-size: contain;
+    }
+    .attribution {
+      position: relative;
+      margin-top: 1.25rem;
+    }
+}
