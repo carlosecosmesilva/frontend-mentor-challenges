@@ -18,19 +18,17 @@ Isso é um site desenvolvido para mostrar todos os desafios concluidos com o men
 
 
 ## Overview
-
 ### The challenges
 
-- Challenge 1: [3 Columns preview card](https://github.com/carlosecosmesilva/frontend-mentor-challenges/tree/master/3-column-preview-card)
-- Challenge 2: [Four card feature section](https://github.com/carlosecosmesilva/frontend-mentor-challenges/tree/master/four-card-feature-section)
-- Challenge 3: [Order Sumary card](https://github.com/carlosecosmesilva/frontend-mentor-challenges/tree/master/order-summary-card)
-- Challenge 4: [Profile card](https://github.com/carlosecosmesilva/frontend-mentor-challenges/tree/master/profile-card-component) 
-- Challenge 5: [Single Price](https://github.com/carlosecosmesilva/frontend-mentor-challenges/tree/master/single-price-grid-component)
-- Challenge 6: [Stats preview card](https://github.com/carlosecosmesilva/frontend-mentor-challenges/tree/master/stats-preview-card-component)
+- Challenge 1: [3 Columns preview card](https://laughing-wiles-b0bfb6.netlify.app/3-column-preview-card/index.html)
+- Challenge 2: [Four card feature section](https://laughing-wiles-b0bfb6.netlify.app/four-card-feature-section/index.html)
+- Challenge 3: [Order Sumary card](https://laughing-wiles-b0bfb6.netlify.app/order-summary-card/index.html)
+- Challenge 4: [Profile card](https://laughing-wiles-b0bfb6.netlify.app/profile-card-component/index.html) 
+- Challenge 5: [Single Price](https://laughing-wiles-b0bfb6.netlify.app/single-price-grid-component/index.html)
+- Challenge 6: [Stats preview card](https://laughing-wiles-b0bfb6.netlify.app/stats-preview-card-component/index.html)
 
 ### Links
 
-- Solution URL: [Solution / Código](https://github.com/carlosecosmesilva/frontend-mentor-challenges)
 - Live Site URL: [Live Site](https://laughing-wiles-b0bfb6.netlify.app)
 
 ## My process
