@@ -4,7 +4,8 @@ const projects = [
     'profile-card-component',
     'single-price-grid-component',
     '3-column-preview-card',
-    'stats-preview-card-component'
+    'stats-preview-card-component',
+    'faq-accordion-card'
 ];
 
 const list = document.getElementById('list');
