@@ -5,7 +5,8 @@ const projects = [
     'single-price-grid-component',
     '3-column-preview-card',
     'stats-preview-card-component',
-    'faq-accordion-card'
+    'faq-accordion-card',
+    'social-proof-section-master'
 ];
 
 const list = document.getElementById('list');

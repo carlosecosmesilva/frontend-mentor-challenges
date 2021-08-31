@@ -1,0 +1,247 @@
+/* ------------------ Font Style ------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/* ------------------ Variables ------------------ */
+:root{
+    --primary-color:hsl(300, 40%, 27%);
+    --secondary-color:hsl(333, 80%, 67%);
+    --dark-color:hsl(303, 10%, 53%);
+    --primary-light:hsl(300, 24%, 96%);
+    --secondary-light: hsl(0, 0%, 100%);
+}
+
+/* ------------------ Reset CSS ------------------ */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ CSS Styles ------------------ */
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section 1 */
+.top-section{
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: url(/social-proof-section-master/assets/images/bg-pattern-top-mobile.svg) no-repeat;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 2rem;
+    line-height: 1.3em;
+}
+
+.subtitle{
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--dark-color);
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.rating-cards{
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-card{
+    margin-top: 1rem;
+    width: 280px;
+    border-radius: 5px;
+    height: 70px;
+    background-color: var(--primary-light);
+}
+
+.rating-stars{
+    justify-content: center;
+    display: flex;
+}
+
+.rating-stars img{
+    margin-top: .8rem;
+    margin-left: .5rem;
+}
+
+.rating-title{
+    margin-top: .8rem;
+    font-size: .8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Section 3 */
+
+.comment-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-card{
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: .8rem;
+    height: 250px;
+    width: 300px;
+    color: var(--secondary-light);
+}
+
+.comment-card img{
+    border-radius: 50%;
+    width: 55px;
+}
+
+.title-comment{
+    margin-left: 20px;
+    line-height: 1.5rem;
+    align-self: center;    
+}
+
+.comment-1,
+.comment-2,
+.comment-3{
+    margin-top: .8rem;
+    display: flex;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.comment-1, 
+.comment-2, 
+.comment-3 p{
+    align-self: center;
+    justify-self: center;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.comment-1 p:last-child{
+    color: var(--secondary-color);
+    font-weight: 100;
+}
+
+.comment-2 p:last-child{
+    color: var(--secondary-color);
+    font-weight: 100;
+}
+
+.comment-3 p:last-child{
+    color: var(--secondary-color);
+    font-weight: 100;
+}
+
+.comment-text{
+    color: var(--secondary-light);
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+
+/* Footer */
+.attribution {
+    margin-top: 3rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--secondary-color);
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+@media screen and (min-width: 768px){
+    .top-section{
+        width: 100%;
+        background: url(/social-proof-section-master/assets/images/bg-pattern-top-desktop.svg) no-repeat;
+        align-items: center;
+        justify-self: center;
+        display: flex;
+    }
+
+    .title{  
+        margin-top: 6rem;
+        margin-right: 10rem;      
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    .subtitle{ 
+        line-height: 1.4;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .rating-cards{
+        display: flex;
+        margin-top: 5rem;
+    }
+    .rating-card{
+        width: 400px;
+        height: 50px;
+        display: flex; 
+        align-items: center;
+    }
+    .rating-stars{
+            margin-left: 1rem;
+            margin-bottom: .5rem;
+    }
+    .rating-title{
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+    .rating-card-2{
+        transform: translate(15%, 0%);
+    }
+    .rating-card-3{
+        transform: translate(30%, 0%);
+    }
+
+    .comment-cards{
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+    .comment-card{
+       margin-left: 2rem;
+       width: 370px;
+    }
+    .comment-card-1{
+        transform: translate(16%, 0%);
+    }
+    .comment-card-2{
+        transform: translate(10%, 10%);
+    }
+    .comment-card-3{
+        transform: translate(5%, 20%);
+    }
+
+    .bg-bot{
+        position: absolute;
+        background: url(/social-proof-section-master/assets/images/bg-pattern-bottom-desktop.svg) no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 40rem;
+        width: 65rem;
+        bottom: -8.25rem;
+        right: 0;
+    }
+}
