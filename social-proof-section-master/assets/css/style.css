@@ -37,13 +37,17 @@ main{
     background: url(/social-proof-section-master/assets/images/bg-pattern-top-mobile.svg) no-repeat;
 }
 
-.title{
+.title-section {
     text-align: center;
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+.title{
+    line-height: 1em;
     font-size: 1.5rem;
-    color: var(--primary-color);
     font-weight: 700;
-    margin-top: 2rem;
-    line-height: 1.3em;
+    color: var(--primary-color);
 }
 
 .subtitle{
@@ -177,11 +181,14 @@ main{
         display: flex;
     }
 
-    .title{  
+    .title-section{  
         margin-top: 6rem;
-        margin-right: 10rem;      
-        font-size: 3rem;
+        max-width: 40%;   
         text-align: left;
+    }
+
+    .title{
+        font-size: 3rem;
     }
 
     .subtitle{ 
@@ -216,6 +223,7 @@ main{
     }
 
     .comment-cards{
+        width: 70rem;
         flex-direction: row;
         justify-content: center;
         align-self: center;
