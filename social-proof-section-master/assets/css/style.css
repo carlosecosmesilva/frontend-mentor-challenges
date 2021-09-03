@@ -138,17 +138,7 @@ main{
     font-size: .9rem;
 }
 
-.comment-1 p:last-child{
-    color: var(--secondary-color);
-    font-weight: 100;
-}
-
-.comment-2 p:last-child{
-    color: var(--secondary-color);
-    font-weight: 100;
-}
-
-.comment-3 p:last-child{
+.comment-1 p,.comment-2 p ,.comment-3 p{
     color: var(--secondary-color);
     font-weight: 100;
 }
@@ -158,7 +148,6 @@ main{
     font-size: .85rem;
     line-height: 1.5;
 }
-
 
 /* Footer */
 .attribution {
