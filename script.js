@@ -6,7 +6,8 @@ const projects = [
     '3-column-preview-card',
     'stats-preview-card-component',
     'faq-accordion-card',
-    'social-proof-section-master'
+    'social-proof-section-master',
+    'huddle-landing-page'
 ];
 
 const list = document.getElementById('list');

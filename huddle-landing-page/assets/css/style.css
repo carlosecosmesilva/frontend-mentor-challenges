@@ -1,0 +1,203 @@
+/* --------------- Font import --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* --------------- Variables --------------- */
+:root{
+    --primary-color: hsl(257, 40%, 49%);
+    --secondary-color: hsl(300, 69%, 71%);
+    --third-color: hsl(300, 30%, 96%);
+}
+
+/* ================ Reset Style CSS ================ */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================== CSS Style ================== */
+body{
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background: url(/huddle-landing-page/assets/images/bg-mobile.svg) no-repeat var(--primary-color);
+    background-size: contain;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top .img-logo{
+    width:8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.top .img-mockups {
+    align-items: center;
+    width: 16rem;
+}
+
+.title{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--third-color);
+    text-align: center;
+}
+
+.subtitle{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .8rem;
+    font-size: .9rem;
+    text-align: center;
+    color: var(--third-color);
+}
+
+.second-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    width: 185px;
+    height: 40px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 20px;
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px 2px hsla(0, 0%, 0%, 0.527);
+}
+
+.btn:active{
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    color: var(--third-color);
+}
+
+.icons{
+    margin: .5rem;
+    width: 35px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons:active{
+    color: var(--secondary-color);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    color: var(--third-color);
+    margin-top: 1rem;
+}
+
+.attribution a { 
+    cursor: pointer;
+    color: var(--third-color); 
+}
+
+.attribution a:hover{
+    color: var(--secondary-color);
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+@media screen and (min-width: 700px){
+    body{
+        background: url(/huddle-landing-page/assets/images/bg-desktop.svg) no-repeat var(--primary-color);
+        background-size: contain;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .first-section{
+        margin-left: 4rem;
+    }
+
+    .top .img-logo{
+        width:12rem;
+    }
+
+    .top .img-mockups {
+        width: 40rem;
+    }
+
+    .second-section{
+        margin-left: 4rem;
+        margin-top: 8rem;
+    }
+
+    .title{
+        margin-left: .6rem;
+        max-width: 80%;
+        font-size: 2.3rem;
+        text-align: left;
+    }
+    
+    .subtitle{
+        margin-top: 0rem;
+        max-width: 80%;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .bot-section{
+        margin-right: 20rem;
+    }
+
+    .btn {
+        height: 45px;
+        width: 145px;
+        border-radius: 60px;
+    }
+
+    .social-media{
+       margin-top: 4rem;
+        margin-left: 8rem;
+    }
+
+    .attribution{
+        margin-top: 0rem;
+    }
+}

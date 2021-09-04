@@ -28,6 +28,7 @@ Isso é um site desenvolvido para mostrar todos os desafios concluidos com o men
 - Challenge 6: [Stats preview card](https://laughing-wiles-b0bfb6.netlify.app/stats-preview-card-component/index.html)
 - Challenge 7: [Faq Accordion Card](https://laughing-wiles-b0bfb6.netlify.app/faq-accordion-card/index.html)
 - Challenge 8: [Social Proof Section](https://laughing-wiles-b0bfb6.netlify.app/social-proof-section/index.html)
+- Challenge 9: [Huddle Landing Page](https://laughing-wiles-b0bfb6.netlify.app/huddle-landing-page/index.html)
 
 ### Links
 
